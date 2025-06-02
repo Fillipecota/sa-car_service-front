@@ -1,0 +1,27 @@
+.headerStock{
+    display: flex;
+    flex-direction: column;
+}
+.mainStock {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    margin: 8px 16px;
+    color: black;   
+}
+
+
+.secao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 16px;
+    border: 1px solid #cccccc;
+    margin-bottom: 10px;
+}
+
+.imageProduct {
+    width: 120px;
+    height: 120px;
+}

@@ -1,0 +1,11 @@
+.layout {
+    display: flex;
+    flex-direction: row;
+}
+
+.main {
+    padding: 30px;
+    width: 100%;
+    overflow: auto;
+    max-height: 100vh;
+}
