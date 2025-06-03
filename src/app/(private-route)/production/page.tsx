@@ -57,7 +57,8 @@ export default function Production() {
             ano: new Date().getFullYear(),
             color: cor,
             motor,
-            pneu
+            pneu,
+            responsavel
         }));
 
         // Mantém somente os 5 últimos
