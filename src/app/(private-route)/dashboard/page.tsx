@@ -3,6 +3,8 @@ import MontadorasBarras from "@/components/graficos/index.02";
 import styles from './styles.module.css'
 import { FcSupport, FcAutomotive, FcDataConfiguration, FcSurvey } from "react-icons/fc";
 import MontadorasPizza from "@/components/graficos/index01";
+import QualidadeRadar from "@/components/graficos/index.03"
+import EstoqueBarras02 from "@/components/graficos/index.04"
 
 export default function Dashboard() {
 
@@ -28,13 +30,27 @@ export default function Dashboard() {
                     <h2>Qualidade</h2>
                 </div>
             </div>
-            <div style={{ maxWidth: '600px', margin: '50px auto', marginTop: '32px' }}>
-                <h1>Gráfico de produção de Carros</h1>
-                <MontadorasBarras />
+            <div className={styles.menuGraficos}>
+
+                <div style={{ maxWidth: '500px', margin: '50px auto', marginTop: '32px' }}>
+                    <h1>Gráfico de produção de Carros</h1>
+                    <MontadorasBarras />
+                </div>
+                <div style={{ maxWidth: '400px', margin: '50px auto', marginTop: '32px' }}>
+                    <h1>Gráfico de Manutenção de Carros</h1>
+                    <MontadorasPizza />
+                </div>
             </div>
-            <div style={{ maxWidth: '600px', margin: '50px auto', marginTop: '32px' }}>
-                <h1>Gráfico de Manutenção de Carros</h1>
-                <MontadorasPizza />
+            <div className={styles.menuGraficos}>
+
+                <div style={{ maxWidth: '500px', margin: '50px auto', marginTop: '32px' }}>
+                    <h1>Gráfico de Qualidade de Carros</h1>
+                    <QualidadeRadar />
+                </div>
+                <div style={{ maxWidth: '400px', margin: '50px auto', marginTop: '32px' }}>
+                    <h1>Gráfico de estoque de Carros</h1>
+                    <EstoqueBarras02 />
+                </div>
             </div>
 
         </div>

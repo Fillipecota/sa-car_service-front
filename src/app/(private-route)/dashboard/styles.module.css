@@ -27,3 +27,8 @@
     width: 32px;
     height: 32px;
 }
+.menuGraficos{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
